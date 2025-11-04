@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Github, Linkedin, Mail, Link as ExtLink, Copy, Code } from 'lucide-react';
+import { Github, Linkedin, Mail, Copy, Code } from 'lucide-react';
 
 const GlassCard = ({ children }) => (
   <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-xl">
@@ -63,8 +63,8 @@ const ExperienceContact = () => {
       >
         <GlassCard>
           <div className="p-6 sm:p-8">
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
-              <div>
+            <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-8">
+              <div className="flex-1">
                 <h3 className="text-white text-2xl font-semibold tracking-tight">Let's build what's next.</h3>
                 <p className="mt-2 text-white/70 text-sm">Open to collaborations, internships, and ambitious side projects.</p>
 
@@ -77,18 +77,34 @@ const ExperienceContact = () => {
                 </div>
               </div>
 
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 w-full md:w-auto">
-                <a href="https://github.com/" target="_blank" rel="noreferrer" className="group flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-white/90 hover:border-purple-400/40 hover:text-purple-200 transition-colors">
-                  <Github className="h-5 w-5" /> <span className="text-sm">GitHub</span>
+              {/* Vertical icon stack: logos only */}
+              <div className="flex flex-col gap-3">
+                <a
+                  href="https://github.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="GitHub"
+                  className="flex h-12 w-12 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-white/90 hover:border-purple-400/40 hover:text-purple-200 transition-colors"
+                >
+                  <Github className="h-5 w-5" />
                 </a>
-                <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" className="group flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-white/90 hover:border-purple-400/40 hover:text-purple-200 transition-colors">
-                  <Linkedin className="h-5 w-5" /> <span className="text-sm">LinkedIn</span>
+                <a
+                  href="https://www.linkedin.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="LinkedIn"
+                  className="flex h-12 w-12 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-white/90 hover:border-purple-400/40 hover:text-purple-200 transition-colors"
+                >
+                  <Linkedin className="h-5 w-5" />
                 </a>
-                <a href="https://leetcode.com/" target="_blank" rel="noreferrer" className="group flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-white/90 hover:border-purple-400/40 hover:text-purple-200 transition-colors">
-                  <Code className="h-5 w-5" /> <span className="text-sm">LeetCode</span>
-                </a>
-                <a href="#" className="group flex items-center gap-2 rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-white/90 hover:border-purple-400/40 hover:text-purple-200 transition-colors">
-                  <ExtLink className="h-5 w-5" /> <span className="text-sm">Blog</span>
+                <a
+                  href="https://leetcode.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="LeetCode"
+                  className="flex h-12 w-12 items-center justify-center rounded-xl border border-white/10 bg-white/5 text-white/90 hover:border-purple-400/40 hover:text-purple-200 transition-colors"
+                >
+                  <Code className="h-5 w-5" />
                 </a>
               </div>
             </div>
