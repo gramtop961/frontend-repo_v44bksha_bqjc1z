@@ -5,10 +5,10 @@ import { motion } from 'framer-motion';
 const Hero = () => {
   return (
     <div className="relative col-span-4 lg:col-span-2 lg:row-span-2 overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl shadow-xl">
-      {/* 3D Spline Background */}
+      {/* 3D Spline Background (full-bleed cover) */}
       <div className="absolute inset-0">
         <Spline
-          scene="https://prod.spline.design/Gt5HUob8aGDxOUep/scene.splinecode"
+          scene="https://prod.spline.design/7m4PRZ7kg6K1jPfF/scene.splinecode"
           style={{ width: '100%', height: '100%' }}
         />
       </div>
