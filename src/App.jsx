@@ -3,6 +3,8 @@ import Hero from './components/Hero.jsx';
 import Projects from './components/Projects.jsx';
 import Skills from './components/Skills.jsx';
 import ExperienceContact from './components/ExperienceContact.jsx';
+import DocNav from './components/DocNav.jsx';
+import SignLanguageInterpreter from './components/SignLanguageInterpreter.jsx';
 import { motion } from 'framer-motion';
 
 const App = () => {
@@ -62,6 +64,8 @@ const App = () => {
           <Hero />
           <Projects />
           <Skills />
+          <DocNav />
+          <SignLanguageInterpreter />
           <ExperienceContact />
         </div>
       </main>
